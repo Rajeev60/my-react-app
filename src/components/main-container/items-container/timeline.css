@@ -1,0 +1,92 @@
+.timeline{
+    width: 40%;
+    padding: 2%;
+}
+.left-status-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid blue;
+    padding: 0px 2px 5px 2px;
+}
+.scan-div{
+    display: flex;
+    height: 11%;
+    margin-top: 2%;
+    ;
+}
+.destination{
+    width: 8%;
+    height: 100%;
+    background:#d5deff;
+    border-radius: 2rem;
+    padding: 5px 0px 0px 10px;
+    margin-left: 5px;
+}
+.dashed-line{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin: 5% 0%;
+    writing-mode: vertical-lr;
+    letter-spacing: 8px;
+    left: 5%;
+    color: #0d92ff;
+}
+.dest-space{
+    width: 92%;
+    background: white;
+}
+.dots{
+    display: flex;
+    position: relative;
+    width: 20%;
+}
+.dot{
+    position: absolute;
+    left: 16%;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #0099ff;
+    border-radius: 2rem;
+       
+}
+
+.dot-line{
+    color: #0d92ff;
+    position: absolute;
+    left: 32px;
+    font-size: 1.2rem;
+}
+.right-summary{
+    display: flex;
+    width: 80%;
+    border: 2px solid #d5deff;
+}
+.right-summary-active{
+    background: #d5deff;
+    color: rgb(23, 175, 23);
+}
+.curr-status{
+    width: 40%;
+    padding: 10px;
+    
+}
+.status-date{
+    width: 30%;
+    text-align: center;
+    padding-top: 5px;   
+}
+.status-time{
+    width: 28%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media (max-width: 710px){
+    .timeline{
+        width: 100%;
+    }
+}

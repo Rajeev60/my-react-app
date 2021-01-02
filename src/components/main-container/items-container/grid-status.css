@@ -1,0 +1,31 @@
+.grid-status{
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+.grid-status-cell{
+    position: relative;
+    width: 110px;
+    height: 100px;
+    background:#d5deff;
+    margin-left: 2%;
+    border-radius: 0.5rem;
+    padding: 10px;
+    color: #4e74ff;
+}
+
+.counter-num{
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    color: #6a8aff;
+    font-size: 2rem;
+}
+.grid-status-cell:nth-child(1){
+    background: #2e5bff;
+    color: white;
+}
+.grid-status-cell:nth-child(1) > .counter-num{
+    color: white;
+}

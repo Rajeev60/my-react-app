@@ -1,0 +1,127 @@
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 14px 12px -8px rgba(0,0,0,0.21);
+}
+#nav-toggle{
+    display: none;
+}
+  .nav-toggle-label{
+    margin-left: 2%;
+    display: none;
+}
+.logo{
+    display: flex;
+    margin-left: 5%;
+}
+h4{
+    display: flex;
+    align-items: center;
+}
+.contain-link{
+    z-index: 10;
+    display: flex;
+    height: 10vh;
+    position: absolute;
+    right: 15%;
+}
+.nav-links{
+    display: flex;
+    padding: 0% 7% 0% 7%;
+    height: 100%;
+    align-items: center;
+    font-weight: bold;
+}
+.nav-links:nth-child(1){
+    background: #f8faff;
+}
+.profile{
+    width: 40px;
+    height: 55%;
+    background: #c0c3c9;
+    border-radius: 2rem;
+    padding: 5px;
+}
+.profile > svg{
+    display: flex;
+    justify-content: center;
+}
+.drop-of-profile{
+    margin-left: 15%;
+    height: 30%;
+    width: 30px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqYgDCd1rvdhXDW7DauI71EpLfiMRWHClXw&usqp=CAU");
+    background-position: center;
+    background-size: cover;    
+}
+@media (max-width: 710px){
+    .contain-link{
+        z-index: 10;
+        position: fixed;
+        height: 0%;
+        width: 100%;
+        flex-direction: column;
+        background: #30026d;
+        left: 0%;
+        top: 10%;
+        transition: height 0.5s ease-in-out;
+      }
+      .profile ,.drop-of-profile{
+          display: none;
+      }
+      .nav-toggle-label{
+        position: absolute;
+        display: block;
+        cursor: pointer;
+      }
+      .logo{
+        position: absolute;
+        right: 45%;
+      }
+      .nav-links{
+        display: none;
+        text-align: center;
+        color: white;
+        border-bottom: 2px solid black;
+      }
+      .nav-links:nth-child(1){
+          color: black;
+      }
+      #nav-toggle:checked ~ .contain-link{
+        height: 50%;
+      }
+      #nav-toggle:checked ~ .contain-link .nav-links{
+        display: flex;
+
+      }
+      #nav-toggle:checked ~ .nav-toggle-label .line:nth-child(1){
+        transform: rotateZ(-38deg);
+          }
+      #nav-toggle:checked ~ .nav-toggle-label .line:nth-child(2){
+        transition: all 0s;
+        visibility: hidden;
+      }
+      #nav-toggle:checked ~ .nav-toggle-label .line:nth-child(3){
+        
+        transform: rotateZ(38deg);
+      }
+      .line{
+        height: 4px;
+        width: 30px;
+        background: rgb(0, 0, 0);
+        margin: 5px;
+        transform-origin: right;
+        transition: all 0.5s;
+      }
+      .items-container{
+          flex-direction: column;
+      }
+      .timeline{
+          width: 100%;
+      }
+      .table-part{
+          width: 100%;
+      }
+}
