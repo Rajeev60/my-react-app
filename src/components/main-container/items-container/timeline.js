@@ -4,7 +4,7 @@ function Timeline(){
         <div className="timeline">
                 <div className="left-status-container">
                     <div className="dashed-line">
-                        ____________________
+                        _________________
                     </div>
                     <div className="scan-div">
                         <div className="destination"> 
